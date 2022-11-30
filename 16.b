@@ -6,17 +6,17 @@ for(i=0;i<12;i++){
 printf("enter the amount of month %d :",i+1);
 scanf("%d",&arr[i]);
 }
+max=arr[0];
 for(i=0;i<12;i++){
-if (arr[0] < arr[i]) {
-      arr[0] = arr[i];
+if (max < arr[i]) {
       max=arr[i];
       mon=i+1;
 }
 }
 printf("the highest sale is on %dth month for Rs. %d " ,mon,max);
+min=arr[0];
 for(i=0;i<12;i++){
-if (arr[0] > arr[i]) {
-      arr[0] = arr[i];
+if (min > arr[i]) {
       min=arr[i];
       mon=i+1;
 }
