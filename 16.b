@@ -10,7 +10,7 @@ for(i=0;i<12;i++){
 if (arr[0] < arr[i]) {
       arr[0] = arr[i];
       max=arr[i];
-      mon=i;
+      mon=i+1;
 }
 }
 printf("the highest sale is on %dth month for Rs. %d " ,mon,max);
@@ -18,7 +18,7 @@ for(i=0;i<12;i++){
 if (arr[0] > arr[i]) {
       arr[0] = arr[i];
       min=arr[i];
-      mon=i;
+      mon=i+1;
 }
 }
 printf("\nthe lowest sale is on %dth month for Rs. %d ",mon,min);
